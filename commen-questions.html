@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>سوالات متداول</title>
+</head>
+<body>
+    <div class="header-and-nav">
+        <nav>
+            <div class="img-logo-menu">
+                <img src="img/logo-ipchess.png" alt="" />
+                <img onclick="menu_show()" src="img/img-list-main-title.png" alt="">
+            </div>
+            <div class="nav-right nav-tabs">
+                <!-- <div class="ip-title-logo  use-Cantarell">
+                    ipChess
+                </div> -->
+                <div style="margin-right:10px;">
+                    سوالات متداول
+                </div>
+            </div>
+            <div class="nav-left nav-tabs">
+                <!-- <div>
+                    توسعه دهندگان
+                </div> -->
+            </div>
+        </nav>
+    </div>
+    <div class="question-container">
+        <h2>
+            سوالات متداول
+        </h2>
+        <div class="questions-box">
+            <div class="question">
+                <p>
+                    آیا میتوان از امکانات جدید به ضورت رایگان استفاده کرد؟
+                </p>
+                <div class="img-c" onclick="show_asnwers(event)" >
+                    <img class="qarrow" src="img/caret-down(1).png" alt="aaa" />
+                </div>
+            </div>
+            <div class="q-answers" >
+                <p>
+                خیر. ویروس­هایی که وارد بدن شده­اند با اسپری کردن الکل یا محلول های حاوی کلر روی تمام بدن  نابود نمی­ شوند.
+
+                اسپری کردن چنین موادی می­تواند برای لباس­ها یا غشاهای مخاطی (یعنی چشم­ها و دهان) خطرناک باشند.
+                
+                هم الکل و هم محلول کلر برای گندزدایی (ضدعفونی) سطوح مناسب هستند ولی باید بر اساس توصیه­های صحیح استفاده شوند
+                </p>
+            </div>
+        </div>
+        <div class="questions-box">
+            <div class="question">
+                <p>
+                    آیا میتوان از امکانات جدید به ضورت رایگان استفاده کرد؟
+                </p>
+                <div class="img-c" onclick="show_asnwers(event)" >
+                    <img class="qarrow" src="img/caret-down(1).png" alt="aaa" />
+                </div>
+            </div>
+            <div class="q-answers" >
+                <p>
+                خیر. ویروس­هایی که وارد بدن شده­اند با اسپری کردن الکل یا محلول های حاوی کلر روی تمام بدن  نابود نمی­ شوند.
+
+                اسپری کردن چنین موادی می­تواند برای لباس­ها یا غشاهای مخاطی (یعنی چشم­ها و دهان) خطرناک باشند.
+                
+                هم الکل و هم محلول کلر برای گندزدایی (ضدعفونی) سطوح مناسب هستند ولی باید بر اساس توصیه­های صحیح استفاده شوند
+                </p>
+            </div>
+        </div>
+        <div class="questions-box">
+            <div class="question">
+                <p>
+                    آیا میتوان از امکانات جدید به ضورت رایگان استفاده کرد؟
+                </p>
+                <div class="img-c" onclick="show_asnwers(event)" >
+                    <img class="qarrow" src="img/caret-down(1).png" alt="aaa" />
+                </div>
+            </div>
+            <div class="q-answers" >
+                <p>
+                خیر. ویروس­هایی که وارد بدن شده­اند با اسپری کردن الکل یا محلول های حاوی کلر روی تمام بدن  نابود نمی­ شوند.
+
+                اسپری کردن چنین موادی می­تواند برای لباس­ها یا غشاهای مخاطی (یعنی چشم­ها و دهان) خطرناک باشند.
+                
+                هم الکل و هم محلول کلر برای گندزدایی (ضدعفونی) سطوح مناسب هستند ولی باید بر اساس توصیه­های صحیح استفاده شوند
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        // let Mnstate = true ;
+
+        function show_asnwers(e){
+            let QBox = e.currentTarget.parentElement.parentElement.children[1];
+            let QBoxArrow = e.currentTarget.children[0];    
+
+            let QBox_2 = document.getElementsByClassName("q-answers");
+            let QBoxArrow_2 = document.getElementsByClassName("qarrow");
+
+            for(let i=0 ; i< QBox_2.length ; i++){
+                QBox_2[i].style.display ="none";
+                QBoxArrow_2[i].style.transform = " rotate(0deg)" ;
+                QBoxArrow_2[i].style.margin = "2px 0 0 0" ;
+            }
+            QBox.style.display ="block";
+            QBoxArrow.style.transform = " rotate(180deg)" ;
+            QBoxArrow.style.margin = "0 0 2px  0" ;
+
+            // if( Mnstate!=true ){
+            //     QBox.style.display ="none";
+            //     QBoxArrow.style.transform = " rotate(0deg)" ;
+            //     QBoxArrow.style.margin = "2px 0 0 0" ;
+            //     Mnstate = !Mnstate;
+            // }
+            // else{
+            //     QBox.style.display ="block";
+            //     QBoxArrow.style.transform = " rotate(180deg)" ;
+            //     QBoxArrow.style.margin = "0 0 2px  0" ;
+            //     Mnstate = !Mnstate;
+            // }
+        }
+    </script>
+</body>
+
+</html>
